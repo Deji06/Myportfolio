@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import { FaTwitter } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import profilePics from '../assets/Snapchat-433813669.jpg'

@@ -1,6 +1,5 @@
-import React from 'react'
 import Projects, {Data} from '../components/Projects'
-import RightContainer from '../components/RightContainer'
+// import RightContainer from '../components/RightContainer'
 const Project = () => {
   return (
     <>
