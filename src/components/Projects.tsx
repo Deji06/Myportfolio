@@ -20,7 +20,8 @@ const Projects:Data[] = [
         id: 2,
         Tool: 'React js',
         Tittle: 'Todolist App',
-        About: 'yeah, every developer must build a todo-list app (lol) so here is mine. It was built using react js and inline css'
+        About: 'yeah, every developer must build a todo-list app (lol) so here is mine. It was built using react js and inline css',
+        url:'https://todolist-r27xpb6ap-dejis-projects-06c81f30.vercel.app/'
     },
     {
         id: 3,

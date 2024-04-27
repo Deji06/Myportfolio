@@ -1,5 +1,7 @@
 import RightContainer from '../components/RightContainer'
 import LeftContainer from '../components/LeftContainer'
+import {animate, motion} from 'framer-motion'
+
 
 
 // type Props = {}
@@ -7,7 +9,7 @@ import LeftContainer from '../components/LeftContainer'
 const Home = () =>  {
   return (
     <>
-        <h1 className=' xl:mt-10 xl:text-[3rem] text-[2rem] uppercase mt-10 text-center sm:text-[3rem] font-spaceGrotesk'>my portfolio</h1>
+        <motion.h1 initial={{y:-100}} animate={{y:0}} transition={{duration:3}} className=' xl:mt-10 xl:text-[4rem] text-[3rem] uppercase mt-10 text-center sm:text-[4rem] '> coding 師傅</motion.h1>
         <main className= ' xl:flex xl:gap-10 xl:mt-8  block ' >
             <div className='xl:w-[40%] xl:pb-[10px] w-[100%]   ml-0'>
             < LeftContainer /> 
