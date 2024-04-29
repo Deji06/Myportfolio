@@ -1,6 +1,6 @@
 import RightContainer from '../components/RightContainer'
 import LeftContainer from '../components/LeftContainer'
-import {animate, motion} from 'framer-motion'
+import {motion} from 'framer-motion'
 
 
 

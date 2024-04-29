@@ -1,6 +1,6 @@
 // import React from 'react'
 import Projects, {Data} from './Projects'
-import {motion} from 'framer-motion'
+
 
 
 
