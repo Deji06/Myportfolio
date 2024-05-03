@@ -26,8 +26,7 @@ const LeftContainer = () => {
             <h3 className='uppercase underline xl:ml-0 ml-5 '>about</h3> <br />
             <h4 className=' ml-5 xl:ml-0 '> <span className="flex items-center gap-1">Hello World <FaHandPeace className="text-yellow-500  text-[2rem] "/></span>
               My name is Deji Olawuni, a frontend developer. 
-              check out few of my projects and hit me up if you've got some gigs
-              for me. <br /> ps i'm a broke nigga esha nu aye mi
+              check out few of my projects and hit me up , lets work together.
             </h4>
         </div>
 
