@@ -5,7 +5,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        spaceGrotesk: ['space Grotesk', 'sans-serif']
+        spaceGrotesk: ['space Grotesk', 'sans-serif'],
+        Zeyada:['zeyada']
       }
     },
   },

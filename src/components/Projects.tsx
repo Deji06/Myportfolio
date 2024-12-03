@@ -1,44 +1,47 @@
-
 export type Data = {
-    id: number,
-    Tool: string,
-    Tittle:  string,
-    About: string,
-    url?: string ,
-}
+  id: number;
+  Tool: string;
+  Tittle: string;
+  About: string;
+  techUsed?: string;
+  url?: string;
+};
 
+const Projects: Data[] = [
+  {
+    id: 1,
+    Tool: "Next Js",
+    Tittle: "FoodieLand",
+    About:
+      "Developed a responsive, multi-page website for FoodieLand with different page sections such as Home, About Us, and Contact Us. The site showcases professional and interactive design, highlighting clean layouts and smooth navigation using next Js framework.",
+    techUsed:	'Next.js for dynamic UI components, Tailwind CSS for minimalist design, Vite for streamlined development, Deployed on Vercel',  
+    url: "https://justfooduiwebapp-three.vercel.app/",
+  },
+  {
+    id: 2,
+    Tool: "React Js",
+    Tittle: "Countryflagfrontend.io challenge",
+    About:"Replicated the Flag Country Challenge from Frontend Mentor. Integrated a REST API to dynamically fetch and display country data, showcasing efficient API handling, responsive design, and seamless navigation.",
+    techUsed:'React.js for dynamic interactivity, Tailwind CSS for styling, React Router for navigation,Async/await for API calls, Deployed on Vercel',
+    url: "https://countryflagfrontendioproject-dejis-projects-06c81f30.vercel.app/",
 
-const Projects:Data[] = [
-    {
-        id: 1,
-        Tool: 'React js',
-        Tittle: 'Movie App',
-        About: 'check out my movie app built using react js and css where you can get information about any movie of your choice',
-        url:'https://vercel.com/dejis-projects-06c81f30/movieapp/4MomCymsuaTZn3cpaM2sT7FRZsrc'
-    },
-    {
-        id: 2,
-        Tool: 'React js',
-        Tittle: 'Todolist App',
-        About: 'yeah, every developer must build a todo-list app (lol) so here is mine. It was built using react js and inline css',
-        // url:'https://todolist-r27xpb6ap-dejis-projects-06c81f30.vercel.app/'
-        url: 'https://todoapp-m0spsadld-dejis-projects-06c81f30.vercel.app/'
-    },
-    {
-        id: 3,
-        Tool: 'Java Script',
-        Tittle: 'e-commerce App',
-        About: 'here is my e-commerce challenge gotten from frontendmentor.io built using vs code as editor, html for the structure, css for styling and javascript for some functionalities.',
-        url:'https://e-commerce-lyart-two.vercel.app/'
-    },
-    {
-        id: 3,
-        Tool: 'React js',
-        Tittle: 'e-commerce App',
-        About: 'same challenge from froentendmentor.io, but this time using react js',
-        url: 'https://my-first-e-commerce-oruzyrqf0-dejis-projects-06c81f30.vercel.app/'
-    },
-  
+  },
+  {
+    id: 3,
+    Tool: "React Js",
+    Tittle: "Breden Architecture",
+    About:"Developed a responsive, multi-page website for Breden Architecture with sections such as Home, About Us, Services, Projects, and Contact Us. The site showcases professional and interactive design, highlighting clean layouts and smooth navigation.",
+    techUsed:'React.js for dynamic UI components, Tailwind CSS for styling and responsiveness, Vite for optimized development, Deployed on Vercel',
+    url: "https://github.com/Deji06/brendenArchitecture",
+  },
+  {
+    id: 3,
+    Tool: "React js",
+    Tittle: "e-commerce App",
+    About:
+      "same challenge from froentendmentor.io, but this time using react js",
+    url: "https://my-first-e-commerce-oruzyrqf0-dejis-projects-06c81f30.vercel.app/",
+  },
 ];
 
 export default Projects;

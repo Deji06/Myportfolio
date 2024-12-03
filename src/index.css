@@ -9,32 +9,17 @@
 }
 
 body {
-    background-color: black;
+    height: 100vh;
+    /* background-color: linear-gradient(90deg, rgba(0,0,0,1) 22%, rgba(255,255,255,1) 57%, rgba(255,255,255,1) 100%); */
+    /* background: linear-gradient(90deg, rgba(0,0,0,1) 36%, rgba(255,255,255,1) 57%, rgba(255,255,255,1) 67%); */
+    /* background: linear-gradient(90deg, rgba(0,0,0,1) 1%, rgba(255,255,255,1) 89%, rgba(255,255,255,1) 96%); */
+    background: rgb(0,0,0);
+    /* background: linear-gradient(90deg, rgba(0,0,0,1) 30%, rgba(255,255,255,1) 99%, rgba(255,255,255,1) 100%); */
     color: #fff;
     font-family: "Roboto", sans-serif;
-    
-     /* font-family: Georgia, 'Times New Roman', Times, serif */
-
 }
 
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
 
-/* .titillium-web-bold {
-    font-family: "Titillium Web", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  } */
-
-/* // <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900 */
-/* 
-.inter-<uniquifier> {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
-} */

@@ -1,32 +1,44 @@
 // import React from 'react'
-import Projects, {Data} from './Projects'
-
-
-
-
+import Projects, { Data } from "./Projects";
+import { FaGithub } from "react-icons/fa";
 
 const RightContainer = () => {
   return (
     <>
-          <div  className='flex flex-col gap-4 xl:ml-7 mt-4 ml-5 sm:ml-5 '>
-            {Projects.map((project:Data, id) => {
-            return (
-              <a href={project.url} key={id}>
-                <div className='bg-[#171717] xl:w-[600px] p-10 h-auto py-5 px-7 w-[90%] sm:w-[95%] hover:p-10 hover:transition ease-in-out delay-[60]' key={id}>
-                  <div>
-                    <h1 className='text-[1rem] uppercase mt-5'>{project.Tool}</h1>
-                  </div>
-                  <div className='mt-5' >
-                    <h2 className='capitalize'>{project.Tittle}</h2>
-                    <p className='text-[0.8rem] mt-1'>{project.About}</p>
-                  </div>
-                </div> 
-              </a>
-            )
-            })}
-        </div>
+      <div className="flex flex-col gap-y-4 sm:ml-7 ml-3 ">
+        <p className="capitalize text-[30px] font-Zeyada">personal projects</p>
+        {Projects.map((project: Data, id) => {
+          return (
+            <a href={project.url} key={id} className="">
+              <div
+                className="bg-[#171717] xl:w-[90%] sm:p-10 sm:h-auto py-5 px-7 sm:w-[95%] hover:bg-[#2c2b2b] hover:transition ease-in-out "
+                key={id}
+              >
+                <h1 className="text-[20px] font-Zeyada uppercase mt-5">
+                  built with: {project.Tool}
+                </h1>
+
+                <div className="mt-5">
+                  <h2 className="capitalize font-serif">{project.Tittle}</h2>
+                  <p className="text-[0.8rem] text-[#737373] mt-1 font-serif">
+                    {project.About}
+                  </p>
+                  <p className="font-serif text-[0.8rem] mt-3 text-[#737373]">
+                    <span className="text-[#fff]">Frontend:</span>{" "}
+                    {project.techUsed}
+                  </p>
+                  <a href="https://github.com/Deji06" className="mt-10">
+                    <FaGithub className="text-[1rem] mt-5" />
+                  </a>
+                </div>
+              </div>
+            </a>
+          );
+        })}
+      </div>
     </>
-)
-}
+  );
+};
 
 export default RightContainer;
+
