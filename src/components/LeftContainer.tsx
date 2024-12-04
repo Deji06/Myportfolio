@@ -1,7 +1,8 @@
 // import React from 'react'
 import { FaTwitter } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import profilePics from "../assets/WhatsApp Image 2024-04-29 at 02.07.34_86d5abc8.jpg";
+// import profilePics from "../assets/WhatsApp Image 2024-04-29 at 02.07.34_86d5abc8.jpg";
+import picture from "../assets/profilePic.jpg"
 import { motion } from "framer-motion";
 
 const LeftContainer = () => {
@@ -38,7 +39,7 @@ const LeftContainer = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 10 }}
             className="w-[50px] h-[50px] rounded-[50%] object-cover overflow-hidden "
-            src={profilePics}
+            src={picture}
             alt="my profile picture"
           />
           <div className="flex gap-3 items-center">
@@ -64,6 +65,7 @@ const LeftContainer = () => {
         <h2 className="mt-5 sm:ml-5 font-Zeyada text-[25px] ml-2 ">want to reach me ?</h2>
         <div className="flex flex-col font-serif space-y-2 sm:ml-5 ml-2 ">
           <span>+234 9060839818</span>
+          {/* <a href="intent://olawunioladeji06@gmail.com#Intent;scheme=mailto;package=com.google.android.gm;end">olawunioladeji06@gmail.com</a> */}
           <a href="https://mail.google.com/mail/?view=cm&fs=1&to=olawunioladeji06@gmail.com" className="hover:underline">olawunioladeji06@gmail.com</a>
         </div>
       </section>

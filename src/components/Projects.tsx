@@ -32,7 +32,7 @@ const Projects: Data[] = [
     Tittle: "Breden Architecture",
     About:"Developed a responsive, multi-page website for Breden Architecture with sections such as Home, About Us, Services, Projects, and Contact Us. The site showcases professional and interactive design, highlighting clean layouts and smooth navigation.",
     techUsed:'React.js for dynamic UI components, Tailwind CSS for styling and responsiveness, Vite for optimized development, Deployed on Vercel',
-    url: "https://github.com/Deji06/brendenArchitecture",
+    url: "https://brenden-architecture.vercel.app/",
   },
   {
     id: 3,
