@@ -25,8 +25,18 @@ const RightContainer = () => {
                   </p>
                   <p className="font-serif text-[0.8rem] mt-3 text-[#737373]">
                     <span className="text-[#fff]">Frontend:</span>{" "}
-                    {project.techUsed}
+                    {project.frontend}
                   </p>
+                  <p className="font-serif text-[0.8rem] mt-3 text-[#737373]">
+                    <span className="text-[#fff]">Database: </span>
+                    {project.database}
+                  </p>
+                  <span className="text-[#737373] text-[0.8rem] pt-1">
+                    click me
+                  </span>
+                  {project.id === 1 ? (
+                    <p className="text-[#737373] text-[0.8rem] mt-2">Note: please change device to lightmode</p>
+                  ) : null}
                   <a href="https://github.com/Deji06" className="mt-10">
                     <FaGithub className="text-[1rem] mt-5" />
                   </a>
@@ -41,4 +51,3 @@ const RightContainer = () => {
 };
 
 export default RightContainer;
-
