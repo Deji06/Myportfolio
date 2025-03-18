@@ -16,7 +16,7 @@ const Projects: Data[] = [
     About: "",
     frontend: "Next js, Tailwind css, ",
     database:'Azure',
-    url: "https://nextjs-frontend-git-master-binarybeastts-projects.vercel.app/",
+    url:"https://nextjs-frontend-git-deji-binarybeastts-projects.vercel.app/",
   },
   {
     id: 2,
