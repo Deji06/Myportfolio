@@ -20,6 +20,16 @@ const Projects: Data[] = [
   },
   {
     id: 2,
+    Tool: "Next Js",
+    Tittle: "",
+    About:
+      "This is a responsive multi-page website built with Next.js and Chakra UI, featuring pages like Home, About, Services, and Contact. The design emphasizes clean layout, accessibility, and mobile responsiveness. Chakra UI was used for fast and consistent component styling, while Next.js ensures optimized performance and routing. The project is fully deployed and live on Vercel.",
+    frontend:
+      "Next js for dynamic UI components, chakra UI for styling and responsiveness, Deployed on Vercel",
+    url: "https://testts-one.vercel.app/",
+  },
+  {
+    id: 3,
     Tool: "React Js",
     Tittle: "Countryflagfrontend.io challenge",
     About:
@@ -29,7 +39,7 @@ const Projects: Data[] = [
     url: "https://countryflagfrontendioproject-dejis-projects-06c81f30.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     Tool: "Next Js",
     Tittle: "FoodieLand",
     About:
@@ -40,7 +50,7 @@ const Projects: Data[] = [
   },
   
   {
-    id: 4,
+    id: 5,
     Tool: "React Js",
     Tittle: "Breden Architecture",
     About:
