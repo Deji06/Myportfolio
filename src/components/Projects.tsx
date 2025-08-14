@@ -19,13 +19,13 @@ const Projects: Data[] = [
     url: "https://consult-web-rosy.vercel.app/",
   },
   {
-    id: 4,
+    id: 2,
     Tool: "React Js,",
     Tittle: "chat app",
     About:
       "Chat app is a dynamic real-time messaging platform crafted with Node.js, Express, and TypeScript on the backend, utilizing MongoDB and Mongoose for efficient data storage and schema management. It incorporates secure user authentication via JWT (JSON Web Tokens), enabling seamless registration and login processes tailored for a smooth user experience. With real-time messaging powered by Socket.IO, users can exchange messages instantly, making it ideal for personal and collaborative communication. The app boasts a clean, type-safe TypeScript codebase, enhanced by robust error handling through custom error classes and HTTP status codes, ensuring reliable feedback. MongoDB stores user profiles and chat histories, providing scalability and persistence for your growing user base. The app reflects my focus on building secure, modern, and efficient web applications.",
-    frontend: "React js| Tailwind css ",
-    database: 'Mongodb Atlas', 
+    frontend: "React| TypeScript | Tailwind css ",
+    database: 'Mongodb Atlas, Render', 
     url: "https://chat-webapp-sigma.vercel.app/",
   },
   {
