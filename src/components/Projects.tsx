@@ -1,43 +1,46 @@
 export type Data = {
   id: number;
-  Tool: string,
-  Tittle: string,
-  About: string,
-  frontend?: string,
-  // database?:string,
+  Tool: string;
+  Tittle: string;
+  About: string;
+  frontend?: string;
+  database?:string,
   url?: string;
 };
 
 const Projects: Data[] = [
   {
     id: 1,
-    Tool: 'Next Js',
-    Tittle: 'Binarry',
-    About: "Developed a multi-page consultation website for a client using Next.js and TypeScript. The site includes a dynamic homepage highlighting the company's services, a dedicated page outlining how the business supports client growth, and a contact page for inquiries and engagement.",
-    frontend:'Next Js | TypeScript | Framer Motion | Tailwind CSS | Vercel',
-    url: 'https://consult-web-rosy.vercel.app/'
+    Tool: "Next Js",
+    Tittle: "Binarry",
+    About:
+      "Developed a multi-page consultation website for a client using Next.js and TypeScript. The site includes a dynamic homepage highlighting the company's services, a dedicated page outlining how the business supports client growth, and a contact page for inquiries and engagement.",
+    frontend: "Next Js | TypeScript | Framer Motion | Tailwind CSS | Vercel",
+    url: "https://consult-web-rosy.vercel.app/",
   },
-   {
-    id: 2,
-    Tool: 'React Js',
-    Tittle: 'Task Manager App',
-    About: 'This is a fully functional **Todo Application** built with **React** and **TypeScript**, the app lets users manage tasks with features like **priority sorting**, **due dates with notifications**, and **local storage persistence**.',
-    frontend: 'React | TypeScript | Fluent UI Icons** (`@fluentui/react-icons`) | **UUID** (`uuid`) — for unique task IDs**LocalStorage** — for persisting tasks across sessions**Browser Notifications API** — for reminders',
-    url:'https://taskmanager-flame.vercel.app/',
+  {
+    id: 4,
+    Tool: "React Js,",
+    Tittle: "chat app",
+    About:
+      "Chat app is a dynamic real-time messaging platform crafted with Node.js, Express, and TypeScript on the backend, utilizing MongoDB and Mongoose for efficient data storage and schema management. It incorporates secure user authentication via JWT (JSON Web Tokens), enabling seamless registration and login processes tailored for a smooth user experience. With real-time messaging powered by Socket.IO, users can exchange messages instantly, making it ideal for personal and collaborative communication. The app boasts a clean, type-safe TypeScript codebase, enhanced by robust error handling through custom error classes and HTTP status codes, ensuring reliable feedback. MongoDB stores user profiles and chat histories, providing scalability and persistence for your growing user base. The app reflects my focus on building secure, modern, and efficient web applications.",
+    frontend: "React js| Tailwind css ",
+    database: 'Mongodb Atlas', 
+    url: "https://chat-webapp-sigma.vercel.app/",
   },
-
-  // {
-  //   id: 2,
-  //   Tool: "Next js",
-  //   Tittle: "alt school replica",
-  //   About: "",
-  //   frontend: "Next js, Tailwind css, ",
-  //   database:'Azure',
-  //   url:"https://nextjs-frontend-git-deji-binarybeastts-projects.vercel.app/",
-  // },
-
   {
     id: 3,
+    Tool: "React Js",
+    Tittle: "Task Manager App",
+    About:
+      "This is a fully functional **Todo Application** built with **React** and **TypeScript**, the app lets users manage tasks with features like **priority sorting**, **due dates with notifications**, and **local storage persistence**.",
+    frontend:
+      "React | TypeScript | Fluent UI Icons** (`@fluentui/react-icons`) | **UUID** (`uuid`) — for unique task IDs**LocalStorage** — for persisting tasks across sessions**Browser Notifications API** — for reminders",
+    url: "https://taskmanager-flame.vercel.app/",
+  },
+
+  {
+    id: 4,
     Tool: "Next Js",
     Tittle: "",
     About:
@@ -48,7 +51,7 @@ const Projects: Data[] = [
   },
 
   {
-    id: 4,
+    id: 5,
     Tool: "React Js",
     Tittle: "Countryflagfrontend.io challenge",
     About:
@@ -57,20 +60,20 @@ const Projects: Data[] = [
       "React.js for dynamic interactivity | Tailwind CSS for styling | React Router for navigation | Async/await for API calls | Deployed on Vercel",
     url: "https://countryflagfrontendioproject-dejis-projects-06c81f30.vercel.app/",
   },
-  
+
   {
-    id: 5,
+    id: 6,
     Tool: "Next Js",
     Tittle: "FoodieLand",
     About:
       "Developed a responsive, multi-page website for FoodieLand with different page sections such as Home, About Us, and Contact Us. The site showcases professional and interactive design, highlighting clean layouts and smooth navigation using next Js framework.",
-  frontend:
+    frontend:
       "Next.js for dynamic UI components | Tailwind CSS for minimalist design | Vite for streamlined development | Deployed on Vercel",
     url: "https://justfooduiwebapp-three.vercel.app/",
   },
 
   {
-    id: 6,
+    id: 7,
     Tool: "React Js",
     Tittle: "Breden Architecture",
     About:
@@ -79,7 +82,6 @@ const Projects: Data[] = [
       "React.js for dynamic UI components | Tailwind CSS for styling and responsiveness | Vite for optimized development | Deployed on Vercel",
     url: "https://brenden-architecture.vercel.app/",
   },
- 
 ];
 
 export default Projects;

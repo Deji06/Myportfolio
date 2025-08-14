@@ -27,10 +27,10 @@ const RightContainer = () => {
                     <span className="text-[#fff]">Frontend:</span>{" "}
                     {project.frontend}
                   </p>
-                   {/* <p className="font-serif text-[0.8rem] mt-3 text-[#737373]">
+                   <p className="font-serif text-[0.8rem] mt-3 text-[#737373]">
                     <span className="text-[#fff]">Database: </span>
                     {project.database} 
-                  </p> */}
+                  </p>
                   <span className="text-white text-[0.8rem] pt-1">
                     click me
                   </span>
