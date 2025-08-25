@@ -1,79 +1,109 @@
-// import React from 'react'
 import { FaTwitter } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-// import profilePics from "../assets/WhatsApp Image 2024-04-29 at 02.07.34_86d5abc8.jpg";
 import picture from "../assets/profilePic.jpg";
 import { motion } from "framer-motion";
+import { MdOutlineLocalPhone } from "react-icons/md";
+import { MdEmail } from "react-icons/md";
+// import { useState } from "react";
+// import { IoIosArrowRoundForward } from "react-icons/io";
+// import { MdArrowOutward } from "react-icons/md";
+import Slider  from "../components/Slider";
 
 const LeftContainer = () => {
+  // const [iconChange, setIconChange] = useState(false);
+
   return (
     <>
-      <section className=" xl:ml-10 p-2 sm:p-0 ">
-        <div className="mt-14 sm:mt-5">
+      <section className="">
+        <div className="mt-10 sm:mt-1">
           <motion.h1
-            className="uppercase text-[35px] sm:ml-5 ml-2 font-Zeyada  sm:text-[40px]"
+            className="uppercase text-[15px] sm:ml-5 pl-2 py-2 w-fit px-10 border-gradient"
             initial={{ y: -200, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 2 }}
           >
-            olawuni peace oladeji
+            hello! i am deji olawuni
           </motion.h1>
-          <motion.h2
-            className="uppercase sm:ml-5 ml-2  font-Zeyada text-[35px] sm:text-[20px]"
+          {/* <motion.h2
+            className="uppercase sm:ml-5 ml-2 font-Zeyada mt-2 text-[35px] sm:text-[20px]"
             initial={{ x: 200, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 2 }}
           >
             web developer
-          </motion.h2>{" "}
-          <h4 className="sm:ml-5 font-serif text-[20px] p-4 sm:p-0  ">
-            {" "}
-            Hello,I am a frontend developer driven to create practical web
-            solutions that address real user needs. 
+          </motion.h2>{" "} */}
+          <h4 className="sm:ml-5 font-serif text-[16px] text-[#686868] py-4 borde sm:w-[80%] ">
+            A full-stack web developer with a passion for building robust web
+            applications from the ground up, ensuring a seamless experience for
+            both the user and the system.
           </h4>
         </div>
+        <div className="border w-full md:border-[#171717] "></div>
 
-        <div className="flex sm:items-center ml-2 sm:ml-5 mt-5 sm:mt-10  gap-5 sm:gap-10 flex-wrap">
+        <div className="flex sm:items-center gap-x-10  ml-2 sm:ml-5 mt-10 sm:mt-10  flex-wrap borde">
           <motion.img
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 10 }}
-            className="w-[50px] h-[50px] rounded-[50%] object-cover overflow-hidden "
+            className="w-[50px] h-[50px] rounded-[20%] object-cover overflow-hidden "
             src={picture}
             alt="my profile picture"
           />
           <div className="flex gap-3 items-center">
-            <FaTwitter className="text-[1rem]" />
+            <FaTwitter className="text-[16px]" />
             <a
               href="https://twitter.com/peace_oladeji"
-              className="text-[25px] font-Zeyada capitalize hover:underline"
+              className="font-Zeyada capitalize text-[20px] underline hover:text-[#cccdde]"
             >
               twitter
             </a>
           </div>
 
           <div className="flex gap-3 items-center">
-            <FaGithub className="text-[1rem]" />
+            <FaGithub className="" />
             <a
               href="https://github.com/Deji06"
-              className="capitalize text-[25px] font-Zeyada hover:underline"
+              className="capitalize  font-Zeyada text-[20px] underline hover:text-[#cccdde]"
             >
               github
             </a>
           </div>
+        {/* <div className="border w-full border-[#171717]"></div> */}
+          {/* <button 
+            className="border-gradient px-7 py-3 capitalize  animate-fade-in"
+            style={{animationDelay:'1s'}}
+
+            >
+              <a href="" className="text-[#686868] ">download cv</a>
+          </button> */}
         </div>
-        <h2 className="mt-5 sm:ml-5 font-Zeyada text-[25px] ml-2 ">
-          want to reach me ?
-        </h2>
-        <div className="flex flex-col font-serif space-y-2 sm:ml-5 ml-2 ">
-          <span>+234 9060839818</span>
-          {/* <a href="intent://olawunioladeji06@gmail.com#Intent;scheme=mailto;package=com.google.android.gm;end">olawunioladeji06@gmail.com</a> */}
-          <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=olawunioladeji06@gmail.com"
-            className="hover:underline"
-          >
-            olawunioladeji06@gmail.com
-          </a>
+
+        <div className="border w-full md:border-[#171717] border-white mt-5"></div>
+        <div className="">
+
+        </div>
+
+        <Slider />
+        <div className="flex flex-col space-y-3">
+          <h2 className="mt- sm:ml-5 font-Zeyada sm:text-[20px] text-[30px] text-[#cccdde] ml-2 ">
+            want to reach me ?
+          </h2>
+          <div className="flex sm:flex-row flex-col gap-y-2 justify-between sm:ml-5 ml-2">
+            <div className="flex items-center gap-x-2 ">
+              <MdOutlineLocalPhone className="text-[20px]" />
+              <p className="text-[14px]">+234 9060839818</p>
+            </div>
+            <div className="flex items-center gap-x-3 ">
+              <MdEmail className="text-[20px]"/>
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=olawunioladeji06@gmail.com"
+                className="hover:underline text-[14px]"
+              >
+                olawunioladeji06@gmail.com
+              </a>
+            </div>
+          </div>
+
         </div>
       </section>
     </>
