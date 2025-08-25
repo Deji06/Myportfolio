@@ -1,4 +1,3 @@
-import React from "react";
 import { MdOutlineLocalPhone } from "react-icons/md";
 import { MdEmail } from "react-icons/md";
 

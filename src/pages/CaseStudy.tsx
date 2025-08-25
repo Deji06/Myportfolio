@@ -1,6 +1,4 @@
-import React from 'react'
 import chatApp from '../assets/chatApp.png'
-import binaryy  from '../assets/binaryy.png'
 import { MdArrowOutward } from "react-icons/md";
 import { Link } from 'react-router-dom';
 import Binaryy from '../assets/binaryy.png';

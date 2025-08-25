@@ -2,9 +2,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import 'swiper/css/autoplay'; // Add missing autoplay CSS
+import 'swiper/css/autoplay';
 
-// Import logos (use proper files and verify paths)
 import reactLogo from '../../src/assets/react.svg'
 import tailwindLogo from '../../src/assets/tailwind-css-2.svg'
 import jsLogo from '../../src/assets/javascript-1.svg';

@@ -1,15 +1,15 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
-  content: [ "./index.html",
-  "./src/**/*.{js,ts,jsx,tsx}"],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       fontFamily: {
-        spaceGrotesk: ['space Grotesk', 'sans-serif'],
-        Zeyada:['zeyada']
-      }
+        spaceGrotesk: ["Space Grotesk", "sans-serif"],
+        Zeyada: ["Zeyada", "cursive"],
+      },
     },
   },
-  plugins: [],
-}
-
+  plugins: [
+  ],
+};
