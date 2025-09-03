@@ -5,11 +5,12 @@ import { MdOutlineLocalPhone } from "react-icons/md";
 
 const NavBar = () => {
   const [iconChange, setIconChange] = useState(false);
+  const[activeLink, setActiveLink] = useState('Home')
   return (
     <>
     {/* large screen nav bar */}
       <nav
-        className="md:flex justify-between sm:items-center mt-5 mx-5 sm:mx-12 py-3 animate-fade-in animate-slide-in hidden"
+        className="md:flex justify-between sm:items-center mx-5 sm:mx-12 py-5 animate-fade-in animate-slide-in hidden"
         style={{ animationDelay: "0.4s" }}
       >
         <div>
@@ -17,13 +18,16 @@ const NavBar = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-x-10 gap-y-5 items-center">
-          <Link to="/" className="uppercase text-[14px] text-[#cccdde] ">
+
+          <Link to="/" className={`uppercase text-[14px] ${activeLink === 'Home'? 'text-[#cccdde]' : 'text-[#686868]'}`} onClick={()=> setActiveLink('Home')}>
             Home
           </Link>
-          <Link to={"/CaseStudy"} className="uppercase  text-[14px] text-[#686868]  ">
+
+          <Link to="/CaseStudy" className={`uppercase text-[14px] ${activeLink === 'case-study'? 'text-[#cccdde]' : 'text-[#686868]'}`} onClick={()=> setActiveLink('case-study')}>
             case study
           </Link>
-          <Link to={"/Contact"} className="uppercase text-[14px] text-[#686868]  ">
+
+          <Link to="/Contact" className={`uppercase text-[14px] ${activeLink === 'contact'? 'text-[#cccdde]' : 'text-[#686868]'}`} onClick={()=> setActiveLink('contact')}>
             contact
           </Link>
 
@@ -52,7 +56,7 @@ const NavBar = () => {
       </nav>
 {/* small screen navbar */}
          <nav
-        className="flex justify-between sm:items-center mt-5 mx-5 sm:mx-12 py-3 animate-fade-in animate-slide-in md:hidden "
+        className="flex justify-between sm:items-center mt-5 mx-4 sm:mx-12 py-3 animate-fade-in animate-slide-in md:hidden "
         style={{ animationDelay: "0.4s" }}
       >
         <div>
@@ -60,13 +64,15 @@ const NavBar = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-x-10 gap-y-5 items-center">
-          <Link to="/" className="uppercase text-[14px] text-[#cccdde] ">
+          <Link to="/" className={`uppercase text-[14px] ${activeLink === 'Home'? 'text-[#cccdde]' : 'text-[#686868]'}`} onClick={()=> setActiveLink('Home')}>
             Home
           </Link>
-          <Link to={"/CaseStudy"} className="uppercase  text-[14px] text-[#686868]  ">
+
+          <Link to="/CaseStudy" className={`uppercase text-[14px] ${activeLink === 'case-study'? 'text-[#cccdde]' : 'text-[#686868]'}`} onClick={()=> setActiveLink('case-study')}>
             case study
           </Link>
-          <Link to={"/Contact"} className="uppercase text-[14px] text-[#686868]  ">
+
+          <Link to="/Contact" className={`uppercase text-[14px] ${activeLink === 'contact'? 'text-[#cccdde]' : 'text-[#686868]'}`} onClick={()=> setActiveLink('contact')}>
             contact
           </Link>
 

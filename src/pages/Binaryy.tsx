@@ -2,7 +2,16 @@
 
 const Binaryy = () => {
   return (
-    <div>Binaryy</div>
+    <>
+      <div>
+        <p>project details</p>
+        <img src="" alt="" />
+        <div>
+          
+        </div>
+      </div>
+    
+    </>
   )
 }
 

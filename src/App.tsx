@@ -1,13 +1,16 @@
 
 import './App.css'
 import 'tailwindcss/tailwind.css';
-import Home from './pages/Home'
-import CaseStudy from './pages/CaseStudy'
-import Booking from './pages/Booking'
-import ContactPage from './pages/ContactPage'
+import {lazy, Suspense } from 'react'
+import ClipLoader from "react-spinners/ClipLoader";
+const Home = lazy(() => import('./pages/Home'))
+const CaseStudy  = lazy (() => import ('./pages/CaseStudy'))
+const Booking  = lazy (() => import ('./pages/Booking'))
+const ContactPage  = lazy (() => import ('./pages/ContactPage'))
+const Binaryy  = lazy (() => import ('./pages/Binaryy'))
+const ChatApp  = lazy (() => import ('./pages/ChatApp'))
 import {Routes, Route} from 'react-router-dom'
-import Binaryy from './pages/Binaryy';
-import ChatApp from './pages/ChatApp';
+
 
 
 function App() {
@@ -15,14 +18,21 @@ function App() {
 
   return (
     <>
-      <Routes>
-        <Route path='/' element={<Home/>} />
-        <Route path='/CaseStudy'  element={<CaseStudy />} />
-        <Route path='/Contact'  element={<ContactPage />} />
-        <Route path='/Booking'  element={<Booking />} />
-        <Route path='/ChatApp'  element={<ChatApp />} />
-        <Route path='/Binaryy'  element={<Binaryy />} />
-      </Routes>
+      <Suspense fallback= {
+        <div className="flex justify-center items-center h-screen">
+            <ClipLoader size={50} color="#36d7b7" />
+        </div>
+        }>
+        <Routes>
+          <Route path='/' element={<Home/>} />
+          <Route path='/CaseStudy'  element={<CaseStudy />} />
+          <Route path='/Contact'  element={<ContactPage />} />
+          <Route path='/Booking'  element={<Booking />} />
+          <Route path='/ChatApp'  element={<ChatApp />} />
+          <Route path='/Binaryy'  element={<Binaryy />} />
+        </Routes>
+      
+      </Suspense>
     
     </>
   )
