@@ -49,7 +49,7 @@ const Slider: React.FC = () => {
       >
         {techLogos.map((logo, index) => (
           <SwiperSlide key={index}>
-            <div className="h-10">
+            <div className="borde py-2 px-5">
               <img
                 src={logo.src}
                 alt={logo.alt}

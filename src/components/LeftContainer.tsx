@@ -68,22 +68,14 @@ const LeftContainer = () => {
               github
             </a>
           </div>
-        {/* <div className="border w-full border-[#171717]"></div> */}
-          {/* <button 
-            className="border-gradient px-7 py-3 capitalize  animate-fade-in"
-            style={{animationDelay:'1s'}}
-
-            >
-              <a href="" className="text-[#686868] ">download cv</a>
-          </button> */}
         </div>
 
         <div className="border w-full md:border-[#171717] border-white mt-5"></div>
-        <div className="">
 
+        <div>
+         <Slider />
         </div>
 
-        <Slider />
         <div className="flex flex-col space-y-3">
           <h2 className="mt- sm:ml-5 font-Zeyada sm:text-[20px] text-[30px] text-[#cccdde] ml-2 ">
             want to reach me ?
