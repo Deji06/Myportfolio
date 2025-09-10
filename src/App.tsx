@@ -9,6 +9,7 @@ const Booking  = lazy (() => import ('./pages/Booking'))
 const ContactPage  = lazy (() => import ('./pages/ContactPage'))
 const Binaryy  = lazy (() => import ('./pages/Binaryy'))
 const ChatApp  = lazy (() => import ('./pages/ChatApp'))
+const TaskManger = lazy(() => import ('./pages/TaskManager'))
 import {Routes, Route} from 'react-router-dom'
 
 
@@ -30,6 +31,7 @@ function App() {
           <Route path='/Booking'  element={<Booking />} />
           <Route path='/ChatApp'  element={<ChatApp />} />
           <Route path='/Binaryy'  element={<Binaryy />} />
+          <Route path='/TaskManager'  element={<TaskManger />} />
         </Routes>
       
       </Suspense>

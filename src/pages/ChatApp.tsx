@@ -6,7 +6,7 @@ const ChatApp = () => {
   return (
     <>
        <div className='pb-10 mt-10 md:mt-0 bg-white animate-slide-in'style={{ animationDelay: "1s" }}>
-        <p className="m-auto w-fit pt-10 text-[35px] text-black ">project details</p>
+        <p className="m-auto w-fit pt-10 text-[35px] text-[#686868] font-bold ">project details</p>
         <img 
           src={appImage} 
           alt="chat app image" 
@@ -15,9 +15,9 @@ const ChatApp = () => {
         />
 
         <div className='px-5 m-auto mt-10 space-y-5'>
-          <div className='md:w-[80%] m-auto'>
+          <div className='md:w-[80%] m-auto space-y-5'>
             <p className='font-bold text-[30px] text-[#686868]'>Building a Seamless Chat App: My Approach to UI/UX and Real-Time Design</p>
-            <p className='text-black text-[18px]'>
+            <p className='text-black'>
               Effective communication tools are essential in today’s world, and 
               building a chat app allowed me to combine technical expertise with 
               user-centered design thinking. My project demonstrates how I approach full-stack development, real-time systems, 
@@ -36,7 +36,7 @@ const ChatApp = () => {
 
           </div>
 
-            <div className='flex md:flex-row flex-col gap-x-3 gap-y-5 pt-10 md:w-[80%] md:mx-14'>
+            <div className='flex md:flex-row flex-col gap-x-3 gap-y-5 pt-10 md:mx-14'>
               <img 
                 src={DesktopView} alt="mobile view for the chat app"  
                 className='md:w-[80%] max-h-[450px] m-auto mt-5 object-contain rounded-md'         

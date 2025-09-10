@@ -41,13 +41,13 @@ const Projects: Data[] = [
   },
   {
     id: 4,
-    Tool: "React Js",
+    Tool: "Next Js",
     Tittle: "Task Manager App",
     About:
-      "This is a fully functional **Todo Application** built with **React** and **TypeScript**, the app lets users manage tasks with features like **priority sorting**, **due dates with notifications**, and **local storage persistence**.",
+      "The Task Manager App is a full-stack productivity tool built with Next.js, TypeScript, Node.js, and Docker. It leverages server-side rendering (SSR) to handle API requests efficiently, ensuring faster data fetching and improved performance. On the frontend, client-side rendering (CSR) is used within components for a smooth and interactive user experience. I implemented React Context to manage global state and handle specific API calls, enabling seamless communication between different parts of the app. The backend is powered by Node.js, containerized with Docker for scalability and easy deployment.",
     Technology:
-      "React | TypeScript | Fluent UI Icons | ",
-    url: "https://taskmanager-flame.vercel.app/",
+      "Next Js | TypeScript | Node js | Docker | Mongo DB  ", 
+    url: "https://taskmanager-frontend-trv5.onrender.com",
   },
 
   {

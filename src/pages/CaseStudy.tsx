@@ -2,6 +2,7 @@ import chatApp from '../assets/chatApp.png'
 import { MdArrowOutward } from "react-icons/md";
 import { Link } from 'react-router-dom';
 import Binaryy from '../assets/binaryy.png';
+import binarry from '../assets/taskmanager_desktop.png'
 
 const CaseStudy = () => {
   return (
@@ -45,19 +46,19 @@ const CaseStudy = () => {
           </div>
         </Link>
 
-         <Link to={'/'} className='w-fit space-y-3 p-3 h-full'>
-          <img src={chatApp} alt="chat app desktop view" 
+         <Link to={'/TaskManager'} className='w-fit space-y-3 p-3 h-full'>
+          <img src={binarry} alt="chat app desktop view" 
             className=' object-contain w-fit h-auto rounded'
             loading='lazy'
           />
           <div className='flex flex-col justify-between space-y-3'>
             <div className='flex justify-between'>
-              <p className='capitalize'>chat app</p>
-              <p className='text-[15px] capitalize'>sep <span className='text-[14px]'>12, 2021</span></p>
+              <p className='capitalize'>task manager app</p>
+              <p className='text-[15px] capitalize'>aug <span className='text-[14px]'>28, 2025</span></p>
             </div>
             <div className='border-gradient w-full'></div>
             <div className='flex justify-between'>
-              <p className='sm:text-[30px]'>chat app built with next js and express js</p>
+              <p className='sm:text-[30px]'>Task manager app built with next js and express js</p>
               <MdArrowOutward  className='text-[25px]'/>
             </div>
           </div>
