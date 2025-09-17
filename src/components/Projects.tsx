@@ -11,15 +11,6 @@ export type Data = {
 const Projects: Data[] = [
   {
     id: 1,
-    Tool: "Next Js",
-    Tittle: "Binarry",
-    About:
-      "Developed a multi-page consultation website for a client using Next.js and TypeScript. The site includes a dynamic homepage highlighting the company's services, a dedicated page outlining how the business supports client growth, and a contact page for inquiries and engagement.",
-    Technology: "Next Js | TypeScript | Framer Motion | Tailwind CSS | Vercel",
-    url: "https://consult-web-rosy.vercel.app/",
-  },
-  {
-    id: 2,
     Tool: "React Js,",
     Tittle: "chat app",
     About:
@@ -28,19 +19,18 @@ const Projects: Data[] = [
     database: 'Mongodb Atlas', 
     url: "https://chat-webapp-sigma.vercel.app/",
   },
-  
+   {
+    id: 2,
+    Tool: "Next Js",
+    Tittle: "Binarry",
+    About:
+      "Developed a multi-page consultation website for a client using Next.js and TypeScript. The site includes a dynamic homepage highlighting the company's services, a dedicated page outlining how the business supports client growth, and a contact page for inquiries and engagement.",
+    Technology: "Next Js | TypeScript | Framer Motion | Tailwind CSS | Vercel",
+    url: "https://consult-web-rosy.vercel.app/",
+  },
+
   {
     id: 3,
-    Tool: "Next Js",
-    Tittle: "FoodieLand",
-    About:
-      "Developed a responsive, multi-page website for FoodieLand with different page sections such as Home, About Us, and Contact Us. The site showcases professional and interactive design, highlighting clean layouts and smooth navigation using next Js framework.",
-    Technology:
-      "Next.js  | Tailwind CSS  | Vite for streamlined development | Deployed on Vercel",
-    url: "https://justfooduiwebapp-three.vercel.app/"
-  },
-  {
-    id: 4,
     Tool: "Next Js",
     Tittle: "Task Manager App",
     About:
@@ -49,9 +39,30 @@ const Projects: Data[] = [
       "Next Js | TypeScript | Node js | Docker | Mongo DB  ", 
     url: "https://taskmanager-frontend-trv5.onrender.com",
   },
-
+  {
+    id: 4,
+    Tool: "Next Js",
+    Tittle: "FoodieLand",
+    About:
+      "Developed a responsive, multi-page website for FoodieLand with different page sections such as Home, About Us, and Contact Us. The site showcases professional and interactive design, highlighting clean layouts and smooth navigation using next Js framework.",
+    Technology:
+      "Next.js  | Tailwind CSS  | Vite for streamlined development | Deployed on Vercel",
+    url: "https://justfooduiwebapp-three.vercel.app/"
+  },
+  
   {
     id: 5,
+    Tool: "React Js",
+    Tittle: "Movie Search App",
+    About:
+      "Built a responsive movie search application with React and Axios, integrating the OMDb API for real-time search functionality, implemented dynamic search with live API requests and error handling for missing results, designed reusable components (Form, ShowMovieContent) to improve scalability.Utilized React hooks (useState, useEffect) for efficient state management.",
+    Technology:
+      "ReactJs | Tailwind CSS | Deployed on Vercel | OMDB API ",
+    url: "https://dejis-movie-app.vercel.app/",
+  },
+
+  {
+    id: 6,
     Tool: "Next Js",
     Tittle: "",
     About:
@@ -59,17 +70,6 @@ const Projects: Data[] = [
     Technology:
       "Next js | chakra UI | Vercel",
     url: "https://testts-one.vercel.app/",
-  },
-
-  {
-    id: 6,
-    Tool: "React Js",
-    Tittle: "Countryflagfrontend.io challenge",
-    About:
-      "Replicated the Flag Country Challenge from Frontend Mentor. Integrated a REST API to dynamically fetch and display country data, showcasing efficient API handling, responsive design, and seamless navigation.",
-    Technology:
-      "React.js for dynamic interactivity | Tailwind CSS for styling | Deployed on Vercel | frontend IO ",
-    url: "https://countryflagfrontendioproject-dejis-projects-06c81f30.vercel.app/",
   },
 
   {
