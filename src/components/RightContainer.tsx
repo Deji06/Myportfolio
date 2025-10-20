@@ -30,17 +30,14 @@ const RightContainer = () => {
                     <span className="text-[#fff] capitalize">Tech used: </span>{" "}
                     {project.Technology}
                   </p>
-                  {project.id === 2 &&  
+                  {(project.id === 1 ||  project.id === 2) && 
                     <p className="font-serif text-[0.8rem] mt-3 text-[#737373]">
                       <span className="text-[#fff]">Database: </span>
                       {project.database}
                     </p>
                   
                   }
-                  {/* <span className="text-white text-[0.8rem] pt-1">
-                    click me
-                  </span> */}
-    
+              
                   <a href="https://github.com/Deji06" className="mt-10">
                     <FaGithub className="text-[1rem] mt-5" />
                   </a>

@@ -29,7 +29,7 @@ const NavBar = () => {
 
           <Link to="/Contact" className={`uppercase text-[14px] ${activeLink === 'contact'? 'text-[#cccdde]' : 'text-[#686868]'}`} onClick={()=> setActiveLink('contact')}>
             contact
-          </Link>
+          </Link> 
 
           </div>
         <Link

@@ -10,6 +10,7 @@ const ContactPage  = lazy (() => import ('./pages/ContactPage'))
 const Binaryy  = lazy (() => import ('./pages/Binaryy'))
 const ChatApp  = lazy (() => import ('./pages/ChatApp'))
 const TaskManger = lazy(() => import ('./pages/TaskManager'))
+const JobTracker = lazy(() => import ('./pages/jobTracker'))
 import {Routes, Route} from 'react-router-dom'
 
 
@@ -32,6 +33,7 @@ function App() {
           <Route path='/ChatApp'  element={<ChatApp />} />
           <Route path='/Binaryy'  element={<Binaryy />} />
           <Route path='/TaskManager'  element={<TaskManger />} />
+          <Route path='/jobTracker'  element={<JobTracker />} />
         </Routes>
       
       </Suspense>
