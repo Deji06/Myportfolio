@@ -4,98 +4,137 @@ import picture from "../assets/profilePic.jpg";
 import { motion } from "framer-motion";
 import { MdOutlineLocalPhone } from "react-icons/md";
 import { MdEmail } from "react-icons/md";
-// import { useState } from "react";
-// import { IoIosArrowRoundForward } from "react-icons/io";
-// import { MdArrowOutward } from "react-icons/md";
-import Slider  from "../components/Slider";
+import Slider from "./Slider";
 
 const LeftContainer = () => {
-  // const [iconChange, setIconChange] = useState(false);
-
   return (
     <>
       <section className="">
         <div className="mt-10 sm:mt-1">
+          {/* Status Badge */}
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            className="flex items-center gap-2 mb-4 sm:ml-5"
+          >
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+            </span>
+            <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-green-500/80">
+              Available for projects
+            </span>
+          </motion.div>
+          {/* Main Greeting - Space Grotesk */}
           <motion.h1
-            className="uppercase text-[15px] sm:ml-5 pl-2 py-2 w-fit px-10 border-gradient"
-            initial={{ y: -200, opacity: 0 }}
+            className="uppercase font-spaceGrotesk font-bold text-[18px] sm:text-[20px] tracking-tight sm:ml-5 py-2 w-fit px-2"
+            initial={{ y: -50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 2 }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
           >
             hello! i am deji olawuni
           </motion.h1>
-          {/* <motion.h2
-            className="uppercase sm:ml-5 ml-2 font-Zeyada mt-2 text-[35px] sm:text-[20px]"
-            initial={{ x: 200, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 2 }}
-          >
-            web developer
-          </motion.h2>{" "} */}
-          <h4 className="sm:ml-5 font-serif text-[16px] text-[#686868] py-4 borde sm:w-[80%] ">
-            A full-stack web developer with a passion for building robust web
-            applications from the ground up, ensuring a seamless experience for
-            both the user and the system.
+
+          <div className="relative h-[2px] w-full overflow-hidden">
+            {/* The actual moving segment */}
+            <motion.div
+              className="absolute h-full w-8 bg-white"
+              initial={{ x: "0%" }}
+              animate={{
+                x: ["5%", "600%"], // Moves from far left to far right
+              }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                ease: "easeInOut",
+                repeatType: "mirror",
+              }}
+            />
+          </div>
+
+          <h4 className="sm:ml-5 font-sans text-[16px] leading-relaxed text-[#a1a1a1] py-3 sm:w-[85%]">
+            A Full-stack web developer specialized in building{" "}
+            <span className="text-white">robust web applications</span> from the
+            ground up, ensuring a seamless experience for both the user and the
+            system.
           </h4>
         </div>
-        <div className="border w-full md:border-[#171717] "></div>
 
-        <div className="flex sm:items-center gap-x-10  ml-2 sm:ml-5 mt-10 sm:mt-10  flex-wrap borde">
-          <motion.img
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 10 }}
-            className="w-[50px] h-[50px] rounded-[20%] object-cover overflow-hidden "
-            src={picture}
-            alt="my profile picture"
-          />
-          <div className="flex gap-3 items-center">
-            <FaTwitter className="text-[16px]" />
-            <a
-              href="https://twitter.com/peace_oladeji"
-              className="font-Zeyada capitalize text-[20px] underline hover:text-[#cccdde]"
-            >
-              twitter
-            </a>
+        <div className="border w-full border-[#171717]"></div>
+
+        {/* Socials*/}
+        <div className="flex items-center gap-x-6 sm:ml-5 mb-10 mt-2">
+          <div className="relative">
+            <motion.img
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              className="w-[60px] h-[60px] rounded-2xl object-cover grayscale hover:grayscale-0 transition-all duration-500 border border-white/10"
+              src={picture}
+              alt="profile"
+            />
+            <div className="absolute -inset-1 bg-white/5 rounded-2xl -z-10 blur-sm"></div>
           </div>
 
-          <div className="flex gap-3 items-center">
-            <FaGithub className="" />
+          <div className="flex flex-col gap-2">
             <a
               href="https://github.com/Deji06"
-              className="capitalize  font-Zeyada text-[20px] underline hover:text-[#cccdde]"
+              className="flex items-center gap-2 text-[12px] font-mono text-[#737373] hover:text-white transition-colors group"
             >
-              github
+              <FaGithub className="group-hover:rotate-12 transition-transform" />{" "}
+              /Deji06
+            </a>
+            <a
+              href="https://twitter.com/peace_oladeji"
+              className="flex items-center gap-2 text-[12px] font-mono text-[#737373] hover:text-white transition-colors group"
+            >
+              <FaTwitter className="group-hover:rotate-12 transition-transform" />{" "}
+              /peace_oladeji
             </a>
           </div>
         </div>
 
-        <div className="border w-full md:border-[#171717] border-white mt-5"></div>
+        <div className="border w-full border-[#171717] mt-5"></div>
 
         <div>
-         <Slider />
+          <Slider />
         </div>
 
-        <div className="flex flex-col space-y-3">
-          <h2 className="mt- sm:ml-5 font-Zeyada sm:text-[20px] text-[30px] text-[#cccdde] ml-2 ">
-            want to reach me ?
+        {/* Contact Section */}
+        <div className="mt-8 sm:ml-5">
+          <h2 className="font-spaceGrotesk font-bold text-[14px] uppercase tracking-widest text-white/40 mb-4">
+            _want to reach me ?
           </h2>
-          <div className="flex sm:flex-row flex-col gap-y-2 justify-between sm:ml-5 ml-2">
-            <div className="flex items-center gap-x-2 ">
-              <MdOutlineLocalPhone className="text-[20px]" />
-              <p className="text-[14px]">+234 9060839818</p>
-            </div>
-            <div className="flex items-center gap-x-3 ">
-              <MdEmail className="text-[20px]"/>
-              <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=olawunioladeji06@gmail.com"
-                className="hover:underline text-[14px]"
-              >
+
+          <div className="grid grid-cols-1 gap-3">
+            {/* Email Card */}
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=olawunioladeji06@gmail.com"
+              className="group flex items-center justify-between p-4 bg-white/[0.03] border border-white/5 rounded-xl hover:bg-white/[0.07] hover:border-white/20 transition-all"
+            >
+              <div className="flex items-center gap-3">
+                <MdEmail className="text-[#737373] group-hover:text-white" />
+                <span className="text-[13px] font-mono text-[#a1a1a1] group-hover:text-white">
+                  Email
+                </span>
+              </div>
+              <span className="text-[11px] font-mono text-[#444] group-hover:text-[#737373]">
                 olawunioladeji06@gmail.com
-              </a>
+              </span>
+            </a>
+
+            {/* Phone Card */}
+            <div className="group flex items-center justify-between p-4 bg-white/[0.03] border border-white/5 rounded-xl">
+              <div className="flex items-center gap-3">
+                <MdOutlineLocalPhone className="text-[#737373]" />
+                <span className="text-[13px] font-mono text-[#a1a1a1]">
+                  Phone
+                </span>
+              </div>
+              <span className="text-[11px] font-mono text-[#737373]">
+                +234 9060839818
+              </span>
             </div>
           </div>
-
         </div>
       </section>
     </>

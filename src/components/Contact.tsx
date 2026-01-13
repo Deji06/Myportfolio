@@ -111,7 +111,7 @@ const Contact = () => {
             <input
               {...register("name")}
               placeholder="john doe"
-              className="border-b-2 border-[#686868] outline-none bg-black p-1 placeholder:text-[#686868]"
+              className="border-b-2 border-[#686868] outline-none p-1 placeholder:text-[#686868]"
             />
             {errors.name && (
               <p className="text-red-500 text-sm">{errors.name.message}</p>
@@ -125,7 +125,7 @@ const Contact = () => {
             <input
               {...register("email")}
               placeholder="johndoe@gmail.com"
-              className="border-b-2 border-[#686868] outline-none bg-black p-1 placeholder:text-[#686868]"
+              className="border-b-2 border-[#686868] outline-none  p-1 placeholder:text-[#686868]"
             />
             {errors.email && (
               <p className="text-red-500">{errors.email.message}</p>
@@ -139,7 +139,7 @@ const Contact = () => {
             <input
               {...register("phone")}
               placeholder="+234 1234567890"
-              className="border-b-2 border-[#686868] outline-none bg-black p-1 placeholder:text-[#686868]"
+              className="border-b-2 border-[#686868] outline-none p-1 placeholder:text-[#686868]"
             />
             {errors.phone && (
               <p className="text-red-500">{errors.phone.message}</p>
@@ -148,7 +148,7 @@ const Contact = () => {
 
           <textarea
             {...register("message")}
-            className="h-[100px] p-3 w-full outline-none border-b-2 border-[#686868] bg-black placeholder:text-[#686868]"
+            className="h-[100px] p-3 w-full outline-none border-b-2 border-[#686868]  placeholder:text-[#686868]"
             placeholder="message"
           >
             {/* <label htmlFor="">message</label> */}
