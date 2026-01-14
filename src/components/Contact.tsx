@@ -70,28 +70,46 @@ const Contact = () => {
           <p className="uppercase text-[15px]  pl-2 py-2 sm:w-[70%] border-gradient">
             let's get your project done
           </p>
-          <h1 className="text-[40px]">Let's create amazing stuff together!</h1>
-          <p>
+          <h1 className="text-[30px] tracking-normal font-mono">
+            Let's create amazing stuff together!
+          </h1>
+          <p className="font-sans text-green-400 text-[14px]">
             Have a project in mind? Looking to partner or work together? Reach
             out through the form and I'll get back to you in the next 48 hours.
           </p>
-          <div className="flex flex-col space-y-3">
-            <h2 className="font-Zeyada text-[20px] text-[#cccdde]">
-              want to reach me ?
+          <div className="mt-8 sm:ml-">
+            <h2 className="font-spaceGrotesk font-bold text-[14px] uppercase tracking-widest text-white/40 mb-4">
+              _want to reach me ?
             </h2>
-            <div className="flex flex-col gap-y-5 items-cente justify-between">
-              <div className="flex items-center gap-x-2 ">
-                <MdOutlineLocalPhone className="text-[20px]" />
-                <p className="text-[14px]">+234 9060839818</p>
-              </div>
-              <div className="flex items-center gap-x-3 ">
-                <MdEmail className="text-[20px]" />
-                <a
-                  href="https://mail.google.com/mail/?view=cm&fs=1&to=olawunioladeji06@gmail.com"
-                  className="hover:underline text-[14px]"
-                >
+
+            <div className="grid grid-cols-1 gap-3">
+              {/* Email Card */}
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=olawunioladeji06@gmail.com"
+                className="group flex items-center justify-between p-4 bg-white/[0.03] border border-white/5 rounded-xl hover:bg-white/[0.07] hover:border-white/20 transition-all"
+              >
+                <div className="flex items-center gap-3">
+                  <MdEmail className="text-[#737373] group-hover:text-white" />
+                  <span className="text-[13px] font-mono text-[#a1a1a1] group-hover:text-white">
+                    Email
+                  </span>
+                </div>
+                <span className="text-[11px] font-mono text-[#444] group-hover:text-[#737373]">
                   olawunioladeji06@gmail.com
-                </a>
+                </span>
+              </a>
+
+              {/* Phone Card */}
+              <div className="group flex items-center justify-between p-4 bg-white/[0.03] border border-white/5 rounded-xl">
+                <div className="flex items-center gap-3">
+                  <MdOutlineLocalPhone className="text-[#737373]" />
+                  <span className="text-[13px] font-mono text-[#a1a1a1]">
+                    Phone
+                  </span>
+                </div>
+                <span className="text-[11px] font-mono text-[#737373]">
+                  +234 9060839818
+                </span>
               </div>
             </div>
           </div>
@@ -103,15 +121,15 @@ const Contact = () => {
           className="sm:w-[60%] space-y-5 sm:px-10 m-5 animate-slide-in"
           style={{ animationDelay: "1s" }}
         >
-          <p className="text-[25px]">send a message</p>
+          {/* <p className="text-[25px] font-mono">send a message</p> */}
           <div className="flex flex-col gap-y-2 border-none">
-            <label htmlFor="name" className="capitalize ">
+            <label htmlFor="name" className="capitalize text-white/40 ">
               name
             </label>
             <input
               {...register("name")}
               placeholder="john doe"
-              className="border-b-2 border-[#686868] outline-none p-1 placeholder:text-[#686868]"
+              className="bg-white/[0.03] border border-white/5 rounded outline-none p-1 placeholder:text-[#686868] font-spaceGrotesk"
             />
             {errors.name && (
               <p className="text-red-500 text-sm">{errors.name.message}</p>
@@ -119,13 +137,13 @@ const Contact = () => {
           </div>
 
           <div className="flex flex-col gap-y-2 border-none">
-            <label htmlFor="" className="capitalize ">
+            <label htmlFor="" className="capitalize  text-white/40">
               email
             </label>
             <input
               {...register("email")}
               placeholder="johndoe@gmail.com"
-              className="border-b-2 border-[#686868] outline-none  p-1 placeholder:text-[#686868]"
+              className=" outline-none rounded  p-1 bg-white/[0.03] border border-white/5 placeholder:text-[#686868]"
             />
             {errors.email && (
               <p className="text-red-500">{errors.email.message}</p>
@@ -133,13 +151,13 @@ const Contact = () => {
           </div>
 
           <div className="flex flex-col gap-y-2 border-none">
-            <label htmlFor="" className="capitalize ">
+            <label htmlFor="" className="capitalize  text-white/40">
               phone
             </label>
             <input
               {...register("phone")}
               placeholder="+234 1234567890"
-              className="border-b-2 border-[#686868] outline-none p-1 placeholder:text-[#686868]"
+              className="bg-white/[0.03] border border-white/5 outline-none rounded p-1 placeholder:text-[#686868]"
             />
             {errors.phone && (
               <p className="text-red-500">{errors.phone.message}</p>
@@ -148,7 +166,7 @@ const Contact = () => {
 
           <textarea
             {...register("message")}
-            className="h-[100px] p-3 w-full outline-none border-b-2 border-[#686868]  placeholder:text-[#686868]"
+            className="h-[100px] p-3 w-full outline-none bg-white/[0.03] border border-white/5  placeholder:text-[#686868]"
             placeholder="message"
           >
             {/* <label htmlFor="">message</label> */}

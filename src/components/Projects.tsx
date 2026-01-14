@@ -20,7 +20,7 @@ const Projects: Data[] = [
       "Next.js | TypeScript | Tailwind CSS | ShadCN UI | TanStack Table | Express.js | Prisma | PostgreSQL | Supabase | Vercel",
     database: "PostgreSQL (Supabase)",
     url: "https://trackjobs.vercel.app",
-    image:"/src/assets/jobtrackerDesktop.png"
+    image:"/assets/jobtrackerDesktop.png"
   },
   {
     id: 2,
@@ -31,7 +31,7 @@ const Projects: Data[] = [
     Technology: "React | TypeScript | Tailwind css | Nodejs | Render ",
     database: "Mongodb Atlas",
     url: "https://chat-webapp-sigma.vercel.app/",
-    image:"/src/assets/chatappSS.png",
+    image:"/assets/chatappSS.png",
 
   },
 
@@ -43,7 +43,7 @@ const Projects: Data[] = [
       "The Task Manager App is a full-stack productivity tool built with Next.js, TypeScript, Node.js, and Docker. It leverages server-side rendering (SSR) to handle API requests efficiently, ensuring faster data fetching and improved performance. On the frontend, client-side rendering (CSR) is used within components for a smooth and interactive user experience. I implemented React Context to manage global state and handle specific API calls, enabling seamless communication between different parts of the app. The backend is powered by Node.js, containerized with Docker for scalability and easy deployment.",
     Technology: "Next Js | TypeScript | Node js | Docker | Mongo DB  ",
     url: "https://taskmanager-frontend-trv5.onrender.com",
-    image:"/src/assets/taskmanager_desktop.png",
+    image:"/assets/taskmanager_desktop.png",
 
   },
   {
@@ -54,7 +54,7 @@ const Projects: Data[] = [
       "Developed a multi-page consultation website for a client using Next.js and TypeScript. The site includes a dynamic homepage highlighting the company's services, a dedicated page outlining how the business supports client growth, and a contact page for inquiries and engagement.",
     Technology: "Next Js | TypeScript | Framer Motion | Tailwind CSS | Vercel",
     url: "https://consult-web-rosy.vercel.app/",
-    image:"/src/assets/binaryy2.png",
+    image:"/assets/binaryy2.png",
 
   },
   {
@@ -66,7 +66,7 @@ const Projects: Data[] = [
     Technology:
       "Next.js  | Tailwind CSS  | Vite for streamlined development | Deployed on Vercel",
     url: "https://justfooduiwebapp-three.vercel.app/",
-    image: "/src/assets/foodie.png",
+    image: "/assets/foodie.png",
   },
 
   {
@@ -77,7 +77,7 @@ const Projects: Data[] = [
       "Built a responsive movie search application with React and Axios, integrating the OMDb API for real-time search functionality, implemented dynamic search with live API requests and error handling for missing results, designed reusable components (Form, ShowMovieContent) to improve scalability.Utilized React hooks (useState, useEffect) for efficient state management.",
     Technology: "ReactJs | Tailwind CSS | Deployed on Vercel | OMDB API ",
     url: "https://dejis-movie-app.vercel.app/",
-    image: "/src/assets/movieDesktop.png"
+    image: "/assets/movieDesktop.png"
   },
 {
   id: 7,
@@ -88,7 +88,7 @@ const Projects: Data[] = [
   Technology:
     "React.js for component-based UI | Day.js for date and time calculations | Tailwind CSS for modern styling and responsiveness | Lucide React for icons | Deployed on Vercel",
   url: "https://year-tracker-chi.vercel.app/",
-  image:"/src/assets/yearTracker.png"
+  image:"/assets/yearTracker.png"
 }
 
 ];

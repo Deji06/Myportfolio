@@ -32,13 +32,14 @@ const ProjectCard = ({ project, index }: { project: Data; index: number }) => {
       <div className="bg-[#171717]/50 backdrop-blur-sm border border-white/5 p-6 sm:p-8 rounded-2xl hover:border-white/20 transition-all duration-300 overflow-hidden relative">
         {/* --- THE GLOW OVERLAY --- */}
         <motion.div
-          className="pointer-events-none absolute -inset-px rounded-2xl opacity-0 group-hover:opacity-100 transition duration-300"
+          className="pointer-events-none absolute -inset-px rounded-2xl opacity-0 group-hover:opacity-100 transition duration-300 transform-gpu will-change-transform"
           style={{
             background: useTransform(
               [mouseX, mouseY],
               ([x, y]) =>
                 `radial-gradient(600px circle at ${x}px ${y}px, rgba(255,255,255,0.06), transparent 40%)`
             ),
+            backfaceVisibility: "hidden"
           }}
         />
 
@@ -53,7 +54,8 @@ const ProjectCard = ({ project, index }: { project: Data; index: number }) => {
               <div className="relative h-[2px] w-full overflow-hidden">
                 {/* The actual moving segment */}
                 <motion.div
-                  className="absolute h-full w-10 bg-white/20 mb-2"
+                  className="absolute h-full w-10 bg-white/20 mb-2 will-change-transform transform-gpu"
+                  style={{backfaceVisibility:"hidden"}}
                   initial={{ x: "0%" }}
                   animate={{
                     x: ["5%", "200%"],
@@ -116,7 +118,8 @@ const RightContainer = () => {
         <div className="relative h-[2px] w-full overflow-hidden">
           {/* The actual moving segment */}
           <motion.div
-            className="absolute h-full w-10 bg-white/20 mb-2"
+            className="absolute h-full w-10 bg-white/20 mb-2 transform-gpu will-change-transform"
+            style={{backfaceVisibility: "hidden"}}
             initial={{ x: "0%" }}
             animate={{
               x: ["5%", "400%"],
