@@ -22,8 +22,21 @@ const Projects: Data[] = [
     url: "https://trackjobs.vercel.app",
     image:"/assets/jobtrackerDesktop.png"
   },
+
   {
-    id: 2,
+  id: 2,
+  Tool: "NextJs, ExpressJs",
+  Tittle: "Finance Tracker",
+  About:
+    "Finance Tracker is a full-stack web application built to help users monitor their personal finances and subscription expenses in one organized dashboard. The frontend is developed with Next.js and TypeScript, providing a responsive and interactive user experience. Users can track expenses, manage recurring subscriptions, and view their financial activity in a clean and intuitive interface. The backend is powered by Express.js and Prisma, connected to a PostgreSQL database hosted on Supabase. The application also includes authentication, secure API communication, and efficient data handling to ensure users can manage their finances reliably.",
+  Technology:
+    "Next.js | TypeScript | Tailwind CSS | React Query | Express.js | Prisma | PostgreSQL | Supabase | Vercel",
+  database: "PostgreSQL (Supabase)",
+  url: "https://finance-manager-tracker.vercel.app/",
+  image: "/assets/financeTrackerDashboard.png"
+},
+  {
+    id: 3,
     Tool: "React Js,",
     Tittle: "chat app",
     About:
@@ -36,7 +49,7 @@ const Projects: Data[] = [
   },
 
   {
-    id: 3,
+    id: 4,
     Tool: "Next Js",
     Tittle: "Task Manager App",
     About:
@@ -46,17 +59,7 @@ const Projects: Data[] = [
     image:"/assets/taskmanager_desktop.png",
 
   },
-  {
-    id: 4,
-    Tool: "Next Js",
-    Tittle: "Binarry",
-    About:
-      "Developed a multi-page consultation website for a client using Next.js and TypeScript. The site includes a dynamic homepage highlighting the company's services, a dedicated page outlining how the business supports client growth, and a contact page for inquiries and engagement.",
-    Technology: "Next Js | TypeScript | Framer Motion | Tailwind CSS | Vercel",
-    url: "https://consult-web-rosy.vercel.app/",
-    image:"/assets/binaryy2.png",
 
-  },
   {
     id: 5,
     Tool: "Next Js",
