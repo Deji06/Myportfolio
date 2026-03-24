@@ -11,7 +11,20 @@ export type Data = {
 
 const Projects: Data[] = [
   {
-    id: 1,
+  id: 1,
+  Tool: "ReactJs, ExpressJs",
+  Tittle: "Finance Tracker",
+  About:
+    "Finance Tracker is a full-stack web application built to help users monitor their personal finances and subscription expenses in one organized dashboard. The frontend is developed with Next.js and TypeScript, providing a responsive and interactive user experience. Users can track expenses, manage recurring subscriptions, and view their financial activity in a clean and intuitive interface. The backend is powered by Express.js and Prisma, connected to a PostgreSQL database hosted on Supabase. The application also includes authentication, secure API communication, and efficient data handling to ensure users can manage their finances reliably.",
+  Technology:
+    " React.js | TypeScript | Tailwind CSS | React Query | Express.js | Prisma | PostgreSQL | Supabase | Vercel",
+  database: "PostgreSQL (Supabase)",
+  url: "https://finance-manager-tracker.vercel.app/",
+  image: "/assets/financeTrackerDashboard.png"
+},
+
+{
+    id: 2,
     Tool: "NextJs, ExpressJs",
     Tittle: "Job Tracker",
     About:
@@ -23,18 +36,6 @@ const Projects: Data[] = [
     image:"/assets/jobtrackerDesktop.png"
   },
 
-  {
-  id: 2,
-  Tool: "NextJs, ExpressJs",
-  Tittle: "Finance Tracker",
-  About:
-    "Finance Tracker is a full-stack web application built to help users monitor their personal finances and subscription expenses in one organized dashboard. The frontend is developed with Next.js and TypeScript, providing a responsive and interactive user experience. Users can track expenses, manage recurring subscriptions, and view their financial activity in a clean and intuitive interface. The backend is powered by Express.js and Prisma, connected to a PostgreSQL database hosted on Supabase. The application also includes authentication, secure API communication, and efficient data handling to ensure users can manage their finances reliably.",
-  Technology:
-    "Next.js | TypeScript | Tailwind CSS | React Query | Express.js | Prisma | PostgreSQL | Supabase | Vercel",
-  database: "PostgreSQL (Supabase)",
-  url: "https://finance-manager-tracker.vercel.app/",
-  image: "/assets/financeTrackerDashboard.png"
-},
   {
     id: 3,
     Tool: "React Js,",
